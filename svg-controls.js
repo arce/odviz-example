@@ -79,15 +79,10 @@
           const pt = getSvgPoint(x, y);
           if (!pt) return;
 
-		  const { x, y, width, height } = vb; // Copia los valores actuales
-
-		  vb.width = width * factor;
-		  vb.height = height * factor;
-		  vb.x = pt.x - (pt.x - x) * factor;
-		  vb.y = pt.y - (pt.y - y) * factor;
-
-		  // Esto "despierta" a Safari
-		  svg.setAttribute('viewBox', `${vb.x} ${vb.y} ${vb.width} ${vb.height}`);
+          vb.width *= factor;
+          vb.height *= factor;
+          vb.x = pt.x - (pt.x - vb.x) * factor;
+          vb.y = pt.y - (pt.y - vb.y) * factor;
           if (state.callbacks.zoom) state.callbacks.zoom(factor);
         },
         pan: (dx, dy) => {
