@@ -133,7 +133,7 @@
       const onWheel = (e) => {
         if (!state.zoomEnabled) return;
         e.preventDefault();
-        const factor = e.deltaY > 0 ? 0.9 : 1.1;
+        const factor = Math.exp(e.deltaY * 0.0015);
         API.zoom(factor, e.clientX, e.clientY);
       };
 
