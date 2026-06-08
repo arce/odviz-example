@@ -2,6 +2,8 @@
 
 This example demonstrates **ODViz (Open Data Visualization)**—a lightweight format that embeds tabular data directly inside an SVG document. A bar chart and a synchronized data table are paired together, showing how to make data visualizations interactive and self‑contained.
 
+**Online Example:** [Open Data Visualization Example](https://arce.github.io/odviz-example/)
+
 ### Interactive Features
 
 The page includes a simple **interactive viewer** with these capabilities:
