@@ -64,7 +64,9 @@ Simply replace the `bart-chart.svg` file with any ODViz‑compliant SVG, and the
 
 - **Project Page:** [ODViz – Open Data Visualization](https://arce.github.io/odviz/)
 - **GitHub Repository:** [github.com/arce/odviz](https://github.com/arce/odviz)
-- **ODViz Specification:** Full details on the format, namespace, metadata, and examples.
+
+- **Simple Table Library:** [github.com/arce/simple-table](https://github.com/arce/simple-table)
+- **SVG Controls Library:** [github.com/arce/svg-controls](https://github.com/arce/svg-controls)
 
 ---
 
