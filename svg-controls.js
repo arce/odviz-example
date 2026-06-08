@@ -133,6 +133,7 @@
       const onWheel = (e) => {
         if (!state.zoomEnabled) return;
         e.preventDefault();
+		e.stopPropagation(); 
         const factor = e.deltaY > 0 ? 0.9 : 1.1;
         API.zoom(factor, e.clientX, e.clientY);
       };
