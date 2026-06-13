@@ -39,7 +39,7 @@ odviz/
 └── README.md            # This file
 ```
 
-### 🔧 Implementation Details
+### Implementation Details
 
 | Component | Description |
 |-----------|-------------|
