@@ -11,10 +11,11 @@ The page includes a simple **interactive viewer** with these capabilities:
 | Feature | Description |
 |---------|-------------|
 | **Zoom** | Scroll with the mouse wheel to zoom in and out of the SVG chart. |
-| **Pan** | Click and drag to move around the zoomed‑in view. |
-| **Selection** | Click on a bar in the chart to automatically highlight its row in the data table. |
-| **Table Selection** | Click on a row in the table to select the corresponding bar in the chart. |
-| **Reset** | Double‑click the SVG to restore the original view. |
+| **Pan** | Click and drag to move around the zoomed-in view. |
+| **Chart selection** | Click on a bar in the chart to automatically highlight its row in the data table. |
+| **Table selection** | Click on a row in the table to select the corresponding bar in the chart. |
+| **Filter** ⭐ | Use the filter inputs in the table header to show only matching rows — the chart hides elements that don't match automatically. |
+| **Detail** ⭐ | Double-click a row in the table or a bar in the chart to open a detail panel with all field values for that element. |
 
 > The selection color is `red`, and the linking between the chart and table is **bidirectional** thanks to the underlying ODViz data model.
 
@@ -34,8 +35,10 @@ odviz/
 ├── bart-chart.svg       # SVG bar chart with embedded data
 ├── index.html           # Main HTML page with the split layout
 ├── simple-table.css     # Styles for the interactive data table
-├── simple-table.js      # Table component (filtering, sorting, selection)
-├── svg-controls.js      # SVG interactivity (zoom, pan, selection)
+├── simple-table.js      # Table component (filtering, sorting, multiple selection)
+├── svg-controls.js      # SVG interactivity (zoom, pan, multiple selection)
+├── simple-details.css   # Styles for the interactive details panel
+├── simple-details.js    # Details component panel
 └── README.md            # This file
 ```
 
